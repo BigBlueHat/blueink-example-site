@@ -1,0 +1,40 @@
+{
+  "_id": "sitemap",
+  "type": "sitemap",
+  "urls": [
+    {
+      "body":{"url": "home","nav_label": "Home"},
+      "children": []
+    },
+    {
+      "body":{"url": "about","nav_label": "About Us"},
+      "children": [
+        {
+          "body":{"url":"about/contact", "nav_label":"Contact"},
+          "children": []
+        },
+        {
+          "body":{"url":"about/history", "nav_label":"History"},
+          "children": []
+        },
+        {
+          "body":{"url": "about/people","nav_label": "People"},
+          "children": [
+            {
+              "body":{"url":"about/people/benjamin", "nav_label":"Benjamin Young"},
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "body":{"url": "services","nav_label": "Services"},
+      "children": []
+    },
+    {
+      "body":{"url": "blog","nav_label": "Blog"},
+      "children": []
+    }
+  ]
+}

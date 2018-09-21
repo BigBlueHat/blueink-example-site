@@ -1,0 +1,24 @@
+{
+   "_id": "about/people",
+   "title": "About Us -=- People",
+   "nav_label": "People",
+   "display_order": 15,
+   "page_items": [
+       [
+           {
+               "_id": "8dd982de76e8b5959e10e6d43600615d",
+               "display_title": true
+           },
+           {
+               "_id": "8dd982de76e8b5959e10e6d4360067ce",
+               "display_title": false
+           }
+       ],
+       [
+           {
+               "_id": "8dd982de76e8b5959e10e6d43600709a"
+           }
+       ]
+   ],
+   "type": "page"
+}

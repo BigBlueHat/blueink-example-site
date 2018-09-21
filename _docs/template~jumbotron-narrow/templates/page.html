@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.png">
+
+    <base href="http://{{site.host}}/blueink/_design/blueink/_rewrite/" />
+
+    <title>{{site.title}}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://getbootstrap.com/assets/js/html5shiv.js"></script>
+      <script src="http://getbootstrap.com/assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+        {{#sitemap}}
+          {{#body}}
+          <li><a href="{{url}}">{{nav_label}}</a></li>
+          {{/body}}
+        {{/sitemap}}
+        </ul>
+        <h3 class="text-muted">{{site.title}}</h3>
+      </div>
+
+      <div data-blueink-area-index="0">
+        {{#items.[0].area}}
+        <div class="jumbotron">
+          <h1>{{title}}</h1>
+          <p class="lead">{{{item}}}</p>
+        </div>
+        {{/items.[0].area}}
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6" data-blueink-area-index="1">
+          {{#items.[1].area}}
+          <div>{{{item}}}</div>
+          {{/items.[1].area}}
+        </div>
+
+        <div class="col-lg-6" data-blueink-area-index="2">
+          {{#items.[2].area}}
+          <div>{{{item}}}</div>
+          {{/items.[2].area}}
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+{{#user}}
+<ui-blueink></ui-blueink>
+<script src="_blueink/bundle.js"></script>
+{{/user}}
+  </body>
+</html>
+

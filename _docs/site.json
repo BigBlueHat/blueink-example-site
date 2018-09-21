@@ -1,0 +1,6 @@
+{
+  "_id": "site",
+  "type": "site",
+  "title":"BlueInk CMS Site",
+  "template": {"_id":"template~site"}
+}

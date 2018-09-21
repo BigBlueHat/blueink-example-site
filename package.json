@@ -1,0 +1,18 @@
+{
+  "name": "blueink-example-site",
+  "version": "0.1.0",
+  "description": "Example site and content for testing BlueInk",
+  "author": "BigBlueHat",
+  "license": "MIT",
+  "repository": "https://github.com/BigBlueHat/blueink-example-site.git",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^9.0.7",
+    "couch-push": "~1.1.4",
+    "glob": "^4.3.1",
+    "gulp": "^3.8.10",
+    "partialify": "^3.1.3",
+    "vinyl-source-stream": "~1.1.0",
+    "yargs": "~3.6.0"
+  }
+}
