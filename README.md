@@ -5,6 +5,14 @@ The plan is for sites to be stand alone node.js packages which depend on
 
 ...we're not quite there yet...
 
+## Usage
+
+```sh
+$ npm i
+$ cp config.json.sample config.json # and customize
+$ npm run build
+```
+
 ## License
 
 Apache License 2.0
