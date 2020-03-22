@@ -22,7 +22,7 @@ if (argv.url) {
 }
 
 gulp.task('default', function() {
-  glob('_docs/*', function(err, matches) {
+  return glob('_docs/*', function(err, matches) {
     if (err) throw err;
 
     matches.forEach(function(doc) {
